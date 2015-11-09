@@ -1,3 +1,10 @@
+# Verwendete Node Version
++ Node 5.0.0 (am Besten per nvm installieren)
++ npm 3.3.6
+
+Basiert auf dieser Anleitung, die Webpack Konfiguration musste für Babel 6 jedoch angepasst werden:
+http://reactjs.de/posts/react-anwendungen-mit-webpack-entwickeln
+
 ### Setup commands
 
     mkdir webpack-vanilla
@@ -13,11 +20,17 @@ Optional: Bibliothek installieren (z.B. React).
     npm install --save react react-dom
     npm install --save-dev babel-preset-react
 
-webpack config schreiben
+Optional: hot loader und dev server:
 
-Webpack ausführen:
+    npm install --save-dev webpack-dev-server react-hot-loader
+
+Webpack config schreiben und Webpack starten:
 
     ./node_modules/bin/webpack
 
 ### Start Webpack Build
 `npm run build`
+
+### Start Dev Server with automatic builds
+`npm run devserver`
+You can now rename Peter Parker in main.js, reload the page, and you'll see the new name :)

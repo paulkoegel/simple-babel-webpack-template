@@ -6,6 +6,8 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   entry:  [
+    'webpack-dev-server/client?http://localhost:8080',
+		'webpack/hot/dev-server',
     path.resolve(__dirname, 'src/main.js')
   ],
   output: {
@@ -18,7 +20,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: ['babel'],
         query: {
           cacheDirectory: true,
           presets: ['es2015', 'react']
@@ -26,6 +28,10 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
   stats: {
 		colors: true
 	},

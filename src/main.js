@@ -6,6 +6,6 @@ import User from './user';
 console.log('React:', React);
 console.log('add 2 and 25:', add(2, 25));
 
-let user = new User({ firstName: 'Peter', lastName: 'Parker' });
+let user = new User({ firstName: 'Peter', lastName: 'Warker' });
 let container = document.querySelector('#react-container');
 container.innerHTML = user.greet();
