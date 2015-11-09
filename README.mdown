@@ -1,0 +1,18 @@
+### Setup commands
+
+    mkdir webpack-vanilla
+    cd webpack-vanilla
+    npm init .
+
+    npm install --save babel
+    npm install --save-dev webpack
+
+Optional: Bibliothek installieren (z.B. React).
+
+    npm install --save react react-dom
+
+webpack config schreiben
+
+Webpack ausführen:
+
+    ./node_modules/bin/webpack
