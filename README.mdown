@@ -22,7 +22,7 @@ Optional: Bibliothek installieren (z.B. React).
 
 Optional: hot loader und dev server:
 
-    npm install --save-dev webpack-dev-server react-hot-loader
+    npm install --save-dev webpack-dev-server
 
 Webpack config schreiben und Webpack starten:
 
