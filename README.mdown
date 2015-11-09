@@ -6,13 +6,18 @@
 
     npm install --save babel
     npm install --save-dev webpack
+    npm install --save-dev babel-preset-es2015
 
 Optional: Bibliothek installieren (z.B. React).
 
     npm install --save react react-dom
+    npm install --save-dev babel-preset-react
 
 webpack config schreiben
 
 Webpack ausführen:
 
     ./node_modules/bin/webpack
+
+### Start Webpack Build
+`npm run build`
