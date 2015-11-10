@@ -1,36 +1,38 @@
-# Verwendete Node Version
-+ Node 5.0.0 (am Besten per nvm installieren)
-+ npm 3.3.6
+# Simple Babel Webpack Starter Pack
+Includes only essentials to:
++ compile ES6 to ES5 (with Babel)
++ use ES6 modules (with Webpack)
++ React is entirely optional and isn't actually used. It's included only to demonstrate how to load external libraries.
 
-Basiert auf dieser Anleitung, die Webpack Konfiguration musste für Babel 6 jedoch angepasst werden:
+This setup has been adapted from the following German tutorial:
 http://reactjs.de/posts/react-anwendungen-mit-webpack-entwickeln
 
-### Setup commands
+### Recommended Node version
++ Node 5.0.0 (best install via nvm)
++ npm 3.3.6
+Both are set in package.json - feel free to remove the version numbers there should your setup require is.
 
-    mkdir webpack-vanilla
-    cd webpack-vanilla
+### Setup
+
+    npm install
+    npm run devserver
+
+You can now rename Peter Parker in main.js, reload the page, and you should see the new name :)
+
+### Only for reference: setup was done with these commands
+
+No need to do this anymore. The following list is only kept as a reference to see how this repository was created from scratch.
+
+    mkdir simple-babel-webpack-starter-pack
+    cd simple-babel-webpack-starter-pack
     npm init .
 
     npm install --save babel
     npm install --save-dev webpack
     npm install --save-dev babel-preset-es2015
+    npm install --save-dev webpack-dev-server
 
-Optional: Bibliothek installieren (z.B. React).
+Optional: add React (only for demonstration purposes, could be any other npm package as well)
 
     npm install --save react react-dom
     npm install --save-dev babel-preset-react
-
-Optional: hot loader und dev server:
-
-    npm install --save-dev webpack-dev-server
-
-Webpack config schreiben und Webpack starten:
-
-    ./node_modules/bin/webpack
-
-### Start Webpack Build
-`npm run build`
-
-### Start Dev Server with automatic builds
-`npm run devserver`
-You can now rename Peter Parker in main.js, reload the page, and you'll see the new name :)
