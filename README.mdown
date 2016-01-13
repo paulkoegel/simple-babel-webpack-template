@@ -1,4 +1,8 @@
 # Simple Babel Webpack Starter Pack
+
+You can see the output / a demo here:  
+[https://paulkogel.github.io/simple-babel-webpack-starter-pack](https://paulkogel.github.io/simple-babel-webpack-starter-pack)
+
 Includes only essentials to:
 + compile ES6 to ES5 (with Babel)
 + use ES6 modules (with Webpack)
