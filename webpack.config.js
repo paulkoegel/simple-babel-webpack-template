@@ -8,12 +8,12 @@ module.exports = {
   entry:  [
     'webpack-dev-server/client?http://localhost:8080',
 		'webpack/hot/dev-server',
-    path.resolve(__dirname, 'src/main.js')
+    path.resolve(__dirname, 'src/application.js')
   ],
   output: {
-    path: path.resolve(__dirname, 'public/dist'),
-    publicPath: 'dist/',
-    filename: 'main.js'
+    path: path.resolve(__dirname, 'dist/js'),
+    publicPath: 'js/',
+    filename: 'application.js'
   },
   module: {
     loaders: [

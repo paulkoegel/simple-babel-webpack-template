@@ -18,7 +18,15 @@ Both are set in `package.json` - feel free to remove the version numbers there s
     npm install
     npm run devserver
 
-You can now rename Peter Parker in main.js, reload the page, and you should see the new name :)
+You can now rename "Peter Parker" in `application.js`, reload the page, and you should see the new name :)
+
+### Transpile JavaScript
+
+   npm run build
+
+Check `dist/js` for output:
++ `application.js` (transpiled source code)
++ `application.js.map` (source map)
 
 ### Only for reference: setup was done with these commands
 
