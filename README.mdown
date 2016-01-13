@@ -20,13 +20,23 @@ Both are set in `package.json` - feel free to remove the version numbers there s
 
 You can now rename "Peter Parker" in `application.js`, reload the page, and you should see the new name :)
 
-### Transpile JavaScript
+### Production build & deploy
 
-   npm run build
+1. To transpile the JavaScript run:
+
+    npm run build
 
 Check `dist/js` for output:
 + `application.js` (transpiled source code)
 + `application.js.map` (source map)
+
+2. Commit changes to git (dist must be checked in):
+
+    git add dist && git commit -m 'Your commit message'
+
+3. Then push just the `/dist` folder to the `gh-pages branch like so:
+
+    git subtree push --prefix dist origin gh-pages
 
 ### Only for reference: setup was done with these commands
 
