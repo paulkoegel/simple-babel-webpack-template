@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "8c4ce44edb493ff9cdf7"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "609f87faff1c1b899265"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -27559,7 +27559,6 @@
 	  _createClass(_class, [{
 	    key: "greet",
 	    value: function greet() {
-	      undefined();
 	      return "Hello, " + this.props.firstName + " " + this.props.lastName + "!";
 	    }
 	  }]);
