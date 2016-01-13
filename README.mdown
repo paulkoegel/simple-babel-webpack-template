@@ -11,7 +11,7 @@ http://reactjs.de/posts/react-anwendungen-mit-webpack-entwickeln
 + Node 5.0.0 (best install via nvm)
 + npm 3.3.6
 
-Both are set in `package.json` - feel free to remove the version numbers there should your setup require is.
+Both are set in `package.json` - feel free to remove the version numbers there should your setup require it.
 
 ### Setup
 
