@@ -7,6 +7,7 @@ Includes only essentials to:
 + compile ES6 to ES5 (with Babel)
 + use ES6 modules (with Webpack)
 + React is entirely optional and isn't actually used. It's included only to demonstrate how to load external libraries.
++ uses static CSS (**not** processed/loaded via Webpack).
 
 This setup has been adapted from the following German tutorial by [Nils Hartmann](https://twitter.com/nilshartmann):  
 [http://reactjs.de/posts/react-anwendungen-mit-webpack-entwickeln](http://reactjs.de/posts/react-anwendungen-mit-webpack-entwickeln)
