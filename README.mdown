@@ -8,8 +8,8 @@ Includes only essentials to:
 + use ES6 modules (with Webpack)
 + React is entirely optional and isn't actually used. It's included only to demonstrate how to load external libraries.
 
-This setup has been adapted from the following German tutorial:
-http://reactjs.de/posts/react-anwendungen-mit-webpack-entwickeln
+This setup has been adapted from the following German tutorial by [Nils Hartmann](https://twitter.com/nilshartmann):  
+[http://reactjs.de/posts/react-anwendungen-mit-webpack-entwickeln](http://reactjs.de/posts/react-anwendungen-mit-webpack-entwickeln)
 
 ### Recommended Node version
 + Node 5.0.0 (best install via nvm)
