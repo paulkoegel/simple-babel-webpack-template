@@ -1,7 +1,7 @@
-# Simple Babel Webpack Starter Pack
+# Simple Babel Webpack Template
 
 You can see the output / a demo here:  
-[https://paulkogel.github.io/simple-babel-webpack-starter-pack](https://paulkogel.github.io/simple-babel-webpack-starter-pack)
+[https://paulkogel.github.io/simple-babel-webpack-template](https://paulkogel.github.io/simple-babel-webpack-template)
 
 Includes only essentials to:
 + compile ES6 to ES5 (with Babel)
@@ -47,8 +47,8 @@ Check `dist/js` for output:
 
 No need to do this anymore. The following list is only kept as a reference to see how this repository was created from scratch.
 
-    mkdir simple-babel-webpack-starter-pack
-    cd simple-babel-webpack-starter-pack
+    mkdir simple-babel-webpack-template
+    cd simple-babel-webpack-template
     npm init .
 
     npm install --save babel
