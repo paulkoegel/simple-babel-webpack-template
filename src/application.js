@@ -1,7 +1,7 @@
 'use strict';
-import add from 'add';
+import add from './add';
 import React from 'react';
-import User from 'user';
+import User from './user';
 
 console.log('React:', React);
 console.log('add 2 and 25:', add(2, 25));
