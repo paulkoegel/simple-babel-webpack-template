@@ -1,5 +1,5 @@
 {
-  "name": "simple-babel-webpack-starter-pack",
+  "name": "simple-babel-webpack-template",
   "version": "1.0.0",
   "description": "",
   "main": "src/application.js",
@@ -11,7 +11,7 @@
   "author": "Paul Kögel",
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulkogel/simple-babel-webpack-starter-pack/"
+    "url": "https://github.com/paulkogel/simple-babel-webpack-template/"
   },
   "license": "ISC",
   "engines": {
