@@ -60,3 +60,7 @@ Optional: add React (only for demonstration purposes, could be any other npm pac
 
     npm install --save react react-dom
     npm install --save-dev babel-preset-react
+
+- - -
+
+    npm install --save-dev webpack-merge
