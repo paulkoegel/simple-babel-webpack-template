@@ -64,3 +64,7 @@ Optional: add React (only for demonstration purposes, could be any other npm pac
 Required npm module to merge Webpack configs (allows us to use `webpack/base.config.js`):
 
     npm install --save-dev webpack-merge
+
+### Good to know
++ the Webpack dev server's port can be changed in package JSON's `devserver` script (`--port` option). Make sure you don't forget to set the same port in `/webpack/development.config.js` - otherwise hot module replacement won't work and you'll get lots of connection errors in your browser's JS console.
++ Webpack dev server's base directory (`/dist` for this repository) is set in package.json's `devserver` script with `content-base`.
