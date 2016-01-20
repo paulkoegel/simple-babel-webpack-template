@@ -1,5 +1,17 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
+
+const babelSettings = {
+  cacheDirectory: true,
+  presets: ['es2015', 'react'],
+  plugins: [
+    'syntax-class-properties',
+    'syntax-decorators',
+    'syntax-object-rest-spread',
+    'transform-class-properties',
+    'transform-object-rest-spread'
+  ]
+};
 
 module.exports = {
   entry:  [
@@ -11,18 +23,7 @@ module.exports = {
         test: /\.jsx?$/,
         include: path.join(__dirname, '../src'),
         exclude: /node_modules/,
-        loader: ['babel'],
-        query: {
-          cacheDirectory: true,
-          presets: ['es2015', 'react'],
-          plugins: [
-            'syntax-class-properties',
-            'syntax-decorators',
-            'syntax-object-rest-spread',
-            'transform-class-properties',
-            'transform-object-rest-spread'
-          ]
-        }
+        loaders: ['babel?' + JSON.stringify(babelSettings)] // JSON.stringify here is a bit retarded, but cannot use the query attribute for Babel settings because we have several loaders in development :(
       }
     ]
   },

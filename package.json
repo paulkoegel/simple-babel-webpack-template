@@ -29,6 +29,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.3.13",
     "babel-preset-es2015": "^6.1.2",
     "babel-preset-react": "^6.1.2",
+    "react-hot-loader": "^1.3.0",
     "redux-devtools": "^3.0.1",
     "rimraf": "^2.5.0",
     "webpack": "^1.12.3",
