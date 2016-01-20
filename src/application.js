@@ -1,11 +1,6 @@
 'use strict';
-import add from 'add';
+import Counter from './components/Counter';
 import React from 'react';
-import User from 'user';
+import { render } from 'react-dom';
 
-console.log('React:', React);
-console.log('add 2 and 25:', add(2, 25));
-
-let user = new User({ firstName: 'Peter', lastName: 'Parker' });
-let container = document.querySelector('#react-container');
-container.innerHTML = user.greet();
+render(<Counter />, document.getElementById('react-container'));
