@@ -1,7 +1,9 @@
-# Simple Babel Webpack Template
+# Simple Redux Webpack Template
+
+Redux code is based on [https://github.com/sadams/todo-redux-react-webpack](https://github.com/sadams/todo-redux-react-webpack), which is a transcription of Dan Abramov's excellent [egghead.io Redux video course](https://egghead.io/series/getting-started-with-redux).
 
 You can see the output / a demo here:  
-[https://paulkogel.github.io/simple-babel-webpack-template](https://paulkogel.github.io/simple-babel-webpack-template)
+[https://paulkogel.github.io/simple-redux-webpack-template](https://paulkogel.github.io/simple-redux-webpack-template)
 
 Includes only essentials to:
 + compile ES6 to ES5 (with Babel)
@@ -47,8 +49,8 @@ Check `dist/js` for output:
 
 No need to do this anymore. The following list is only kept as a reference to see how this repository was created from scratch.
 
-    mkdir simple-babel-webpack-template
-    cd simple-babel-webpack-template
+    mkdir simple-redux-webpack-template
+    cd simple-redux-webpack-template
     npm init .
 
     npm install --save babel
