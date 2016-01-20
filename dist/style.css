@@ -6,7 +6,7 @@ html {
 }
 body {
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 850px;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.6em;
   font-size: 18px;
@@ -16,6 +16,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   min-height: 100vh;
+  background: #eee;
 }
 nav, main, footer {
   display: flex;
@@ -23,29 +24,35 @@ nav, main, footer {
   width: 100%;
 }
 nav {
-  flex: 0 0 50px;
-  background: #eee;
-  padding: 5px 20px;
+  flex: 0 0 30px;
+  background: #444;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav ul {
   padding: 0;
+  margin: 0;
 }
 nav li {
   display: inline;
 }
 nav li a {
   text-decoration: none;
-  color: #222;
+  color: #eee;
   text-transform: uppercase;
 }
 main {
   height: auto;
   flex: 1 0 auto;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 #react-container {
   outline: 1px solid #444;
   padding: 20px;
+  background: white;
+  min-height: 50vh;
 }
 .console-note {
   margin-top: 50px;

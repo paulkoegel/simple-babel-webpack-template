@@ -8,12 +8,20 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
+        include: path.join(__dirname, '../src'),
         exclude: /node_modules/,
         loader: ['babel'],
         query: {
           cacheDirectory: true,
-          presets: ['es2015', 'react']
+          presets: ['es2015', 'react'],
+          plugins: [
+            'syntax-class-properties',
+            'syntax-decorators',
+            'syntax-object-rest-spread',
+            'transform-class-properties',
+            'transform-object-rest-spread'
+          ]
         }
       }
     ]
@@ -27,7 +35,7 @@ module.exports = {
    resolve: {
     // had problems importing react in src/components with the following option, so I disabled it again.
     //root: 'src', // allows us to specify import paths as if they were from the root of the src directory. This makes it very easy to navigate to files regardless of how deeply nested your current file is. https://webpack.github.io/docs/configuration.html#resolve-root
-    extensions: ['', '.js'] // '' is required for Webpack to work!?!
+    extensions: ['', '.js', '.jsx'] // '' is required for Webpack to work!?!
   },
   stats: {
     colors: true
