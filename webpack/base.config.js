@@ -25,7 +25,8 @@ module.exports = {
     devtoolModuleFilenameTemplate: '[resource-path]' // copied from Mathias, see: https://webpack.github.io/docs/configuration.html#output-devtoolmodulefilenametemplate
   },
    resolve: {
-    root: 'src', // allows us to specify import paths as if they were from the root of the src directory. This makes it very easy to navigate to files regardless of how deeply nested your current file is. https://webpack.github.io/docs/configuration.html#resolve-root
+    // had problems importing react in src/components with the following option, so I disabled it again.
+    //root: 'src', // allows us to specify import paths as if they were from the root of the src directory. This makes it very easy to navigate to files regardless of how deeply nested your current file is. https://webpack.github.io/docs/configuration.html#resolve-root
     extensions: ['', '.js'] // '' is required for Webpack to work!?!
   },
   stats: {
