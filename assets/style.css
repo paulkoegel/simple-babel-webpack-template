@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0 auto;
+  max-width: 650px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
+  font-size: 18px;
+  color:#444;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+nav, main, footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+nav {
+  flex: 0 0 50px;
+  background: #eee;
+  padding: 5px 20px;
+}
+nav ul {
+  padding: 0;
+}
+nav li {
+  display: inline;
+}
+nav li a {
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+}
+main {
+  height: auto;
+  flex: 1 0 auto;
+  padding-top: 10vh;
+}
+#react-container {
+  outline: 1px solid #444;
+  padding: 20px;
+}
+.console-note {
+  margin-top: 50px;
+  font-style: italic;
+}
+footer {
+  flex: 0 0 50px;
+  flex-direction: row;
+  border-top: 1px solid grey;
+}

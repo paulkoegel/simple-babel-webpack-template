@@ -39,7 +39,7 @@ Check `dist/js` for output:
 
     git add dist && git commit -m 'Your commit message'
 
-3. Then push just the `/dist` folder to the `gh-pages branch like so:
+3. Then push just the `/dist` folder to the `gh-pages` branch like so:
 
     git subtree push --prefix dist origin gh-pages
 
@@ -62,5 +62,7 @@ Optional: add React (only for demonstration purposes, could be any other npm pac
     npm install --save-dev babel-preset-react
 
 - - -
+
+Required npm module to merge Webpack configs (allows us to use `webpack/base.config.js`):
 
     npm install --save-dev webpack-merge
