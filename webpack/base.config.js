@@ -1,4 +1,3 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin')
 var path = require('path');
 var webpack = require('webpack');
 
@@ -20,18 +19,12 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, '../dist'),
-    publicPath: '/',
+    path: path.resolve(__dirname, '../dist/built'),
+    publicPath: '/built/',
     filename: 'js/application.js',
     devtoolModuleFilenameTemplate: '[resource-path]' // copied from Mathias, see: https://webpack.github.io/docs/configuration.html#output-devtoolmodulefilenametemplate
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: 'index_template.html',
-      filename: 'index.html'
-    })
-  ],
-  resolve: {
+   resolve: {
     root: 'src', // allows us to specify import paths as if they were from the root of the src directory. This makes it very easy to navigate to files regardless of how deeply nested your current file is. https://webpack.github.io/docs/configuration.html#resolve-root
     extensions: ['', '.js'] // '' is required for Webpack to work!?!
   },

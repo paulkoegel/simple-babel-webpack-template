@@ -61,8 +61,6 @@ Optional: add React (only for demonstration purposes, could be any other npm pac
     npm install --save react react-dom
     npm install --save-dev babel-preset-react
 
-- - -
-
 Required npm module to merge Webpack configs (allows us to use `webpack/base.config.js`):
 
     npm install --save-dev webpack-merge
